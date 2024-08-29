@@ -27,19 +27,19 @@ Microservice that will receive a CCN and return if it is valid via the Luhn Algo
 - Implementation taken from:
   - https://github.com/durango/go-credit-card/blob/master/creditcard.go
   - The above repo also has advanced functionality and is a good reference for further enhancing this project.
-```
-function isValid(cardNumber[1..length])
-    sum := 0
-    parity := length mod 2
-    for i from 1 to length do
-        if i mod 2 != parity then
-            sum := sum + cardNumber[i]
-        elseif cardNumber[i] > 4 then
-            sum := sum + 2 * cardNumber[i] - 9
-        else
-            sum := sum + 2 * cardNumber[i]
-        end if
-    end for
-    return cardNumber[length] == (10 - (sum mod 10))
-end function
+  ```
+  function isValid(cardNumber[1..length])
+      sum := 0
+      parity := length mod 2
+      for i from 1 to length do
+          if i mod 2 != parity then
+              sum := sum + cardNumber[i]
+          elseif cardNumber[i] > 4 then
+              sum := sum + 2 * cardNumber[i] - 9
+          else
+              sum := sum + 2 * cardNumber[i]
+          end if
+      end for
+      return cardNumber[length] == (10 - (sum mod 10))
+  end function
   
