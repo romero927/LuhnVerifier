@@ -6,7 +6,6 @@ Microservice that will receive a CCN and return if it is valid via the Luhn Algo
 - Targets GoLang 1.23.0
 - Written by Kyle Romero, 2024
 - Inspired By: https://zerotomastery.io/blog/golang-practice-projects/
-- 
 
 # Usage
 - Run application
